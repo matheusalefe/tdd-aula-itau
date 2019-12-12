@@ -3,6 +3,9 @@ from .models import Aluno, Usuario
 
 # Create your views here.
 
+def home(request):
+    return render(request, 'home.html')
+
 def index(request):
     if request.method == 'POST':
         data_usuario = Usuario()
@@ -29,5 +32,5 @@ def deletar(request, id):
     if item is not None:
         item.ativo = False
         item.save()
-        return redirect('alunos/lista')
-    return render(request, 'lista.html')
+        return redirect('/alunos/lista')
+    return redirect('/')

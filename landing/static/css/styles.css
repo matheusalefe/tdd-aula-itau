@@ -2,6 +2,41 @@ body{
     margin-left: 20px;
 }
 
+#navbar{
+    width: 100%;
+    height: 5vw;
+    background-color: darkorange;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: darkred;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#imagem1{
+    height: 35vw;
+    width: 100%;
+    padding-top: 2vw;
+}
+
+#secao-texto{
+    display: flex;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+}
+
+.col{
+    width: 47%;
+}
+
+
 .titulo-index{
     color: blue;
     font-size: 30pt;

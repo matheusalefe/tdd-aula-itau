@@ -3,10 +3,10 @@
 {% block content %}
 <h1>Lista de suas frases e dúvidas</h1>
     {% for item in listar_alunos %}
-        <p>Nome do Aluno: {{item.nome}}</p>
-        <p>Frase: {{item.frase}}</p>
-        <a href="alunos/delete/{{item.id}}">Deletar</a>
-        <hr>
+    <p>Nome do Aluno:{{item.nome}} </p>
+    <p>Frase:{{item.frase}}</p>
+    <a href="/alunos/delete/{{item.id}}">Deletar</a>
+    <hr>
     {% endfor %}
         
 {% endblock %}

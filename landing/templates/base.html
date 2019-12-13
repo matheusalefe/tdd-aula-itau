@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,14 @@
     <a href="/">home</a>
     <a href="/alunos/cadastro">cadastro</a>
     <a href="/alunos/lista">lista</a>
-    <a href="">login</a>
+    <a href="login/">login</a>
 </nav>
+
+{% if login.context %}
+<h4>Bem vindx, {{Usuario.email}}</h4>
+{% endif %}
+
+
 {% block content %}
 
 

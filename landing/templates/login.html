@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<h2>Página de login</h2>
+<section id="paginalogin">
+    <div id="divformlogin" >
+        <form action="" method="post" id="formulariologin">
+            {% csrf_token %}
+            <label for="email">Email: </label>
+            <input name="email" type="email" required>
+
+            <label for="senha">Senha: </label>
+            <input name="senha" type="password" required>
+            <input type="submit" id="botao" value="Enviar">
+        </form>
+        <div id="linkcadastro">
+            <a href="/alunos/cadastro">Ainda não tem cadastro? Clique aqui!</a>
+        </div>
+        
+    </div>
+</section>
+
+{% endblock %}

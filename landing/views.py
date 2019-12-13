@@ -34,3 +34,16 @@ def deletar(request, id):
         item.save()
         return redirect('/alunos/lista')
     return redirect('/')
+
+def login(request):
+    if request.method == 'POST':
+
+        data_usuario = Usuario()
+
+        data_usuario.email = request.POST['email']
+        data_usuario.senha = request.POST['senha']
+        
+        data_usuario.save()
+        return redirect('/')
+    context = {"verificar" : True}
+    return render(request, 'login.html', context)

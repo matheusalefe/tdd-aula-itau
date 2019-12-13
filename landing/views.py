@@ -43,7 +43,6 @@ def login(request):
         data_usuario.email = request.POST['email']
         data_usuario.senha = request.POST['senha']
         
-        data_usuario.save()
         return redirect('/')
     context = {"verificar" : True}
     return render(request, 'login.html', context)

@@ -3,7 +3,7 @@
 Os comandos abaixo devem ser executados no terminal ou git bash.
 Clonar o repositório:
 
-``` git clone https://github.com/tdd-mastertech/s3-21-crud.git ```
+``` git clone https://github.com/matheusalefe/tdd-aula-itau.git ```
 
 Entrar na pasta:
 

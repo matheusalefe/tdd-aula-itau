@@ -1,13 +1,13 @@
 ## Como executar o projeto:
 
-Os comandos abaixo devem ser executados no terminal ou git bash.
+Os comandos abaixo devem ser executados no git bash dentro de uma pasta previamente criada.
 Clonar o repositório:
 
 ``` git clone https://github.com/matheusalefe/tdd-aula-itau.git ```
 
 Entrar na pasta:
 
-``` cd s3-21-crud ```
+``` cd sistema ```
 
 
 Acessar a pasta e já deletar a pasta .git para depois subir para seu próprio github.
